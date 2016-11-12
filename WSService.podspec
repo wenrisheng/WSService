@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "WSService/WSService/**/*.h"
 
-  s.dependency "AFNetworking"
-  s.dependency "ASIHTTPRequest"
+  s.dependency 'AFNetworking', '~> 3.1.0'
+  s.dependency 'ASIHTTPRequest', '~> 1.8.2'
 
 end
