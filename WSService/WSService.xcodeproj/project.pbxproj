@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73ACC95E750D181DEAC9E3F7 /* libPods-WSService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E432E93BD0AD017128969546 /* libPods-WSService.a */; };
+		7CB1B18E1BA26FFD0038CC14 /* WSBaseService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7CB1B18D1BA26FFD0038CC14 /* WSBaseService.h */; };
+		7CB1B1901BA26FFD0038CC14 /* WSBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1B18F1BA26FFD0038CC14 /* WSBaseService.m */; };
+		7CB1B1961BA26FFD0038CC14 /* libWSService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB1B18A1BA26FFD0038CC14 /* libWSService.a */; };
+		7CB1B2D71BA2769D0038CC14 /* WSAFNetworkingWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1B2D21BA2769D0038CC14 /* WSAFNetworkingWrap.m */; };
+		A2A5F5651DA9D835006FC299 /* WSASIHttpRequestWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5F5621DA9D835006FC299 /* WSASIHttpRequestWrap.m */; };
+		A2A5F5661DA9D835006FC299 /* WSUploadDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5F5641DA9D835006FC299 /* WSUploadDownloadRequest.m */; };
+		A2C6DA911CEE5A4C00355155 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C6DA901CEE5A4C00355155 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CB1B1971BA26FFD0038CC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CB1B1821BA26FFD0038CC14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CB1B1891BA26FFD0038CC14;
+			remoteInfo = WSService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7CB1B1881BA26FFD0038CC14 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				7CB1B18E1BA26FFD0038CC14 /* WSBaseService.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2FB3E4531B05B9CCDDA9E2FA /* Pods-WSService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSService.release.xcconfig"; path = "../IOSOCFrameProj/Pods/Target Support Files/Pods-WSService/Pods-WSService.release.xcconfig"; sourceTree = "<group>"; };
+		7CB1B18A1BA26FFD0038CC14 /* libWSService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWSService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB1B18D1BA26FFD0038CC14 /* WSBaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSBaseService.h; sourceTree = "<group>"; };
+		7CB1B18F1BA26FFD0038CC14 /* WSBaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSBaseService.m; sourceTree = "<group>"; };
+		7CB1B1951BA26FFD0038CC14 /* WSServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB1B19B1BA26FFD0038CC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CB1B1AD1BA271570038CC14 /* WSBaseServiceDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSBaseServiceDefine.h; sourceTree = "<group>"; };
+		7CB1B2D11BA2769D0038CC14 /* WSAFNetworkingWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAFNetworkingWrap.h; sourceTree = "<group>"; };
+		7CB1B2D21BA2769D0038CC14 /* WSAFNetworkingWrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAFNetworkingWrap.m; sourceTree = "<group>"; };
+		A2A5F5611DA9D835006FC299 /* WSASIHttpRequestWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSASIHttpRequestWrap.h; sourceTree = "<group>"; };
+		A2A5F5621DA9D835006FC299 /* WSASIHttpRequestWrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSASIHttpRequestWrap.m; sourceTree = "<group>"; };
+		A2A5F5631DA9D835006FC299 /* WSUploadDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSUploadDownloadRequest.h; sourceTree = "<group>"; };
+		A2A5F5641DA9D835006FC299 /* WSUploadDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSUploadDownloadRequest.m; sourceTree = "<group>"; };
+		A2C6DA901CEE5A4C00355155 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A4285790AC91BC247604216E /* Pods-WSService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSService.debug.xcconfig"; path = "../IOSOCFrameProj/Pods/Target Support Files/Pods-WSService/Pods-WSService.debug.xcconfig"; sourceTree = "<group>"; };
+		E432E93BD0AD017128969546 /* libPods-WSService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WSService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CB1B1871BA26FFD0038CC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C6DA911CEE5A4C00355155 /* Security.framework in Frameworks */,
+				73ACC95E750D181DEAC9E3F7 /* libPods-WSService.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB1B1921BA26FFD0038CC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB1B1961BA26FFD0038CC14 /* libWSService.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09E8C8402539B0064CC9D40A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4285790AC91BC247604216E /* Pods-WSService.debug.xcconfig */,
+				2FB3E4531B05B9CCDDA9E2FA /* Pods-WSService.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A6A82D653589922FD328E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2C6DA901CEE5A4C00355155 /* Security.framework */,
+				E432E93BD0AD017128969546 /* libPods-WSService.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CB1B1811BA26FFD0038CC14 = {
+			isa = PBXGroup;
+			children = (
+				7CB1B18C1BA26FFD0038CC14 /* WSService */,
+				7CB1B1991BA26FFD0038CC14 /* WSServiceTests */,
+				7CB1B18B1BA26FFD0038CC14 /* Products */,
+				09E8C8402539B0064CC9D40A /* Pods */,
+				7A6A82D653589922FD328E22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CB1B18B1BA26FFD0038CC14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1B18A1BA26FFD0038CC14 /* libWSService.a */,
+				7CB1B1951BA26FFD0038CC14 /* WSServiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CB1B18C1BA26FFD0038CC14 /* WSService */ = {
+			isa = PBXGroup;
+			children = (
+				A2A5F5601DA9D835006FC299 /* ASIHttpRequestWrap */,
+				7CB1B2D01BA2769D0038CC14 /* AFNetworkingWrap */,
+				7CB1B18D1BA26FFD0038CC14 /* WSBaseService.h */,
+				7CB1B18F1BA26FFD0038CC14 /* WSBaseService.m */,
+				7CB1B1AD1BA271570038CC14 /* WSBaseServiceDefine.h */,
+			);
+			path = WSService;
+			sourceTree = "<group>";
+		};
+		7CB1B1991BA26FFD0038CC14 /* WSServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1B19A1BA26FFD0038CC14 /* Supporting Files */,
+			);
+			path = WSServiceTests;
+			sourceTree = "<group>";
+		};
+		7CB1B19A1BA26FFD0038CC14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1B19B1BA26FFD0038CC14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CB1B2D01BA2769D0038CC14 /* AFNetworkingWrap */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1B2D11BA2769D0038CC14 /* WSAFNetworkingWrap.h */,
+				7CB1B2D21BA2769D0038CC14 /* WSAFNetworkingWrap.m */,
+			);
+			path = AFNetworkingWrap;
+			sourceTree = "<group>";
+		};
+		A2A5F5601DA9D835006FC299 /* ASIHttpRequestWrap */ = {
+			isa = PBXGroup;
+			children = (
+				A2A5F5611DA9D835006FC299 /* WSASIHttpRequestWrap.h */,
+				A2A5F5621DA9D835006FC299 /* WSASIHttpRequestWrap.m */,
+				A2A5F5631DA9D835006FC299 /* WSUploadDownloadRequest.h */,
+				A2A5F5641DA9D835006FC299 /* WSUploadDownloadRequest.m */,
+			);
+			path = ASIHttpRequestWrap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CB1B1891BA26FFD0038CC14 /* WSService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB1B19E1BA26FFD0038CC14 /* Build configuration list for PBXNativeTarget "WSService" */;
+			buildPhases = (
+				8B95CBA19B73754A3DB4634E /* [CP] Check Pods Manifest.lock */,
+				7CB1B1861BA26FFD0038CC14 /* Sources */,
+				7CB1B1871BA26FFD0038CC14 /* Frameworks */,
+				7CB1B1881BA26FFD0038CC14 /* CopyFiles */,
+				98DDDB8881AF15F4505E0F50 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WSService;
+			productName = WSService;
+			productReference = 7CB1B18A1BA26FFD0038CC14 /* libWSService.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7CB1B1941BA26FFD0038CC14 /* WSServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB1B1A11BA26FFD0038CC14 /* Build configuration list for PBXNativeTarget "WSServiceTests" */;
+			buildPhases = (
+				7CB1B1911BA26FFD0038CC14 /* Sources */,
+				7CB1B1921BA26FFD0038CC14 /* Frameworks */,
+				7CB1B1931BA26FFD0038CC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CB1B1981BA26FFD0038CC14 /* PBXTargetDependency */,
+			);
+			name = WSServiceTests;
+			productName = WSServiceTests;
+			productReference = 7CB1B1951BA26FFD0038CC14 /* WSServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CB1B1821BA26FFD0038CC14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wrs;
+				TargetAttributes = {
+					7CB1B1891BA26FFD0038CC14 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					7CB1B1941BA26FFD0038CC14 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 7CB1B1851BA26FFD0038CC14 /* Build configuration list for PBXProject "WSService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7CB1B1811BA26FFD0038CC14;
+			productRefGroup = 7CB1B18B1BA26FFD0038CC14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CB1B1891BA26FFD0038CC14 /* WSService */,
+				7CB1B1941BA26FFD0038CC14 /* WSServiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CB1B1931BA26FFD0038CC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B95CBA19B73754A3DB4634E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98DDDB8881AF15F4505E0F50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../IOSOCFrameProj/Pods/Target Support Files/Pods-WSService/Pods-WSService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CB1B1861BA26FFD0038CC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A5F5661DA9D835006FC299 /* WSUploadDownloadRequest.m in Sources */,
+				7CB1B1901BA26FFD0038CC14 /* WSBaseService.m in Sources */,
+				7CB1B2D71BA2769D0038CC14 /* WSAFNetworkingWrap.m in Sources */,
+				A2A5F5651DA9D835006FC299 /* WSASIHttpRequestWrap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB1B1911BA26FFD0038CC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CB1B1981BA26FFD0038CC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CB1B1891BA26FFD0038CC14 /* WSService */;
+			targetProxy = 7CB1B1971BA26FFD0038CC14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7CB1B19C1BA26FFD0038CC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = "-Wno-incompatible-pointer-types";
+				WARNING_LDFLAGS = "";
+			};
+			name = Debug;
+		};
+		7CB1B19D1BA26FFD0038CC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "-Wno-incompatible-pointer-types";
+				WARNING_LDFLAGS = "";
+			};
+			name = Release;
+		};
+		7CB1B19F1BA26FFD0038CC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4285790AC91BC247604216E /* Pods-WSService.debug.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ASIHTTPRequest\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PODS_ROOT = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../WSThirdComponents/**";
+			};
+			name = Debug;
+		};
+		7CB1B1A01BA26FFD0038CC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB3E4531B05B9CCDDA9E2FA /* Pods-WSService.release.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ASIHTTPRequest\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PODS_ROOT = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../WSThirdComponents/**";
+			};
+			name = Release;
+		};
+		7CB1B1A21BA26FFD0038CC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WSServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wrs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CB1B1A31BA26FFD0038CC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WSServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wrs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CB1B1851BA26FFD0038CC14 /* Build configuration list for PBXProject "WSService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB1B19C1BA26FFD0038CC14 /* Debug */,
+				7CB1B19D1BA26FFD0038CC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CB1B19E1BA26FFD0038CC14 /* Build configuration list for PBXNativeTarget "WSService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB1B19F1BA26FFD0038CC14 /* Debug */,
+				7CB1B1A01BA26FFD0038CC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CB1B1A11BA26FFD0038CC14 /* Build configuration list for PBXNativeTarget "WSServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB1B1A21BA26FFD0038CC14 /* Debug */,
+				7CB1B1A31BA26FFD0038CC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CB1B1821BA26FFD0038CC14 /* Project object */;
+}
