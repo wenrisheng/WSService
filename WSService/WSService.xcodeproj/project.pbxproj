@@ -41,7 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2FB3E4531B05B9CCDDA9E2FA /* Pods-WSService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSService.release.xcconfig"; path = "../IOSOCFrameProj/Pods/Target Support Files/Pods-WSService/Pods-WSService.release.xcconfig"; sourceTree = "<group>"; };
+		3D78B07B74CB4566BDD0D323 /* Pods-WSService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSService.release.xcconfig"; path = "../Pods/Target Support Files/Pods-WSService/Pods-WSService.release.xcconfig"; sourceTree = "<group>"; };
 		7CB1B18A1BA26FFD0038CC14 /* libWSService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWSService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB1B18D1BA26FFD0038CC14 /* WSBaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSBaseService.h; sourceTree = "<group>"; };
 		7CB1B18F1BA26FFD0038CC14 /* WSBaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSBaseService.m; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		A2A5F5631DA9D835006FC299 /* WSUploadDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSUploadDownloadRequest.h; sourceTree = "<group>"; };
 		A2A5F5641DA9D835006FC299 /* WSUploadDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSUploadDownloadRequest.m; sourceTree = "<group>"; };
 		A2C6DA901CEE5A4C00355155 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		A4285790AC91BC247604216E /* Pods-WSService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSService.debug.xcconfig"; path = "../IOSOCFrameProj/Pods/Target Support Files/Pods-WSService/Pods-WSService.debug.xcconfig"; sourceTree = "<group>"; };
+		E14B9FE3185352B329343B6B /* Pods-WSService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSService.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-WSService/Pods-WSService.debug.xcconfig"; sourceTree = "<group>"; };
 		E432E93BD0AD017128969546 /* libPods-WSService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WSService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,8 +83,8 @@
 		09E8C8402539B0064CC9D40A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A4285790AC91BC247604216E /* Pods-WSService.debug.xcconfig */,
-				2FB3E4531B05B9CCDDA9E2FA /* Pods-WSService.release.xcconfig */,
+				E14B9FE3185352B329343B6B /* Pods-WSService.debug.xcconfig */,
+				3D78B07B74CB4566BDD0D323 /* Pods-WSService.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../IOSOCFrameProj/Pods/Target Support Files/Pods-WSService/Pods-WSService-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-WSService/Pods-WSService-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -399,7 +399,7 @@
 		};
 		7CB1B19F1BA26FFD0038CC14 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4285790AC91BC247604216E /* Pods-WSService.debug.xcconfig */;
+			baseConfigurationReference = E14B9FE3185352B329343B6B /* Pods-WSService.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,7 +419,7 @@
 		};
 		7CB1B1A01BA26FFD0038CC14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FB3E4531B05B9CCDDA9E2FA /* Pods-WSService.release.xcconfig */;
+			baseConfigurationReference = 3D78B07B74CB4566BDD0D323 /* Pods-WSService.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
